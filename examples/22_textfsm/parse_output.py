@@ -9,5 +9,5 @@ with open(template) as f, open(output_file) as output:
     re_table = textfsm.TextFSM(f)
     header = re_table.header
     result = re_table.ParseText(output.read())
-    print(result)
+    #print(result)
     print(tabulate(result, headers=header))
